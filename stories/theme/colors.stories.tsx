@@ -1,0 +1,41 @@
+import { colors } from "../../src";
+import styled from "styled-components";
+import { Story } from "@storybook/react";
+
+// Component section
+
+const Circle = styled.div<{ color: string }>`
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: ${(props) => props.color ? props.color : undefined};
+`;
+
+const CircleList = styled.ul`
+  list-style: none;
+  display: flex;
+
+  & > li:not(:last-child) {
+    margin-right: 1rem;
+  }
+`;
+
+// End component Section
+
+export default {
+  title: "Molecules/Colors"
+}
+
+export const Colors = () => {
+  return (
+    <CircleList>
+      {Object.entries(colors).map(color => (
+        <li style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <Circle color={color[1]} />
+          <div>{color[0]}</div>
+        </li>
+      ))}
+    </CircleList>
+  )
+}
+

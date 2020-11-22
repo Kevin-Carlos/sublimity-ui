@@ -52,13 +52,13 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@size-limit/preset-small-lib": "^4.7.0",
-    "@storybook/addon-essentials": "^6.1.0-rc.4",
+    "@storybook/addon-essentials": "^6.1.2",
     "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-links": "^6.1.0-rc.4",
-    "@storybook/addons": "^6.1.0-rc.4",
-    "@storybook/react": "^6.1.0-rc.4",
-    "@types/react": "^16.9.56",
-    "@types/react-dom": "^16.9.9",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/addons": "^6.1.2",
+    "@storybook/react": "^6.1.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.4",
     "babel-loader": "^8.2.1",
     "husky": "^4.3.0",
@@ -71,5 +71,7 @@
     "tslib": "^2.0.3",
     "typescript": "^4.0.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "phosphor-react": "^1.0.1"
+  }
 }
