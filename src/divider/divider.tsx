@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export type DividerPropsT = {
+export type DividerProps = {
   color: string;
   highlightColor?: string;
 }
 
-export const Divider = styled.div<DividerPropsT>`
+export const Divider = styled.div<DividerProps>`
   width: 100%;
   height: 2px;
   background: radial-gradient(
