@@ -11,7 +11,7 @@ const Grid = styled.div`
 `;
 
 const Description = styled.p`
-  max-width: 35rem;
+  max-width: 60rem;
 `;
 // End Components Section
 

@@ -6,7 +6,7 @@ export type LinkButtonProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const LinkButton: FC<LinkButtonProps> = (props) => {
   return (
-    <StyledALink {...props} target="_blank" rel="noreferrer">
+    <StyledALink {...props} target="_blank" rel="noreferrer noopener">
       <Underline />
       {props.children}
     </StyledALink>
@@ -14,7 +14,7 @@ export const LinkButton: FC<LinkButtonProps> = (props) => {
 }
 
 const Underline = styled.hr`
-  color: ${colors.orange} !important;
+  border-color: ${colors.orange};
   border-width: 0px;
   position: absolute;
   bottom: -1rem;
@@ -25,6 +25,7 @@ const Underline = styled.hr`
 
 const StyledALink = styled.a`
   text-decoration: none;
+  cursor: pointer;
   display: inline-block;
   color: ${colors.white};
   transition: all 0.2s ease-in-out;
@@ -35,7 +36,7 @@ const StyledALink = styled.a`
     ${Underline} {
       border-width: 1px;
       width: 2rem;
-      color: ${colors.orange} !important;
+      border-color: ${colors.orange} !important;
     }
   }
 `;
