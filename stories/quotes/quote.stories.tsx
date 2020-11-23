@@ -16,7 +16,7 @@ const Description = styled.p`
 // End Components Section
 
 export default {
-  title: "Atoms/Quotes"
+  title: "Molecules/Quotes"
 }
 
 const Template: Story<BlockquoteProps> = (args) => (

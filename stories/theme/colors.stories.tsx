@@ -1,6 +1,5 @@
 import { colors } from "../../src";
 import styled from "styled-components";
-import { Story } from "@storybook/react";
 
 // Component section
 
@@ -23,7 +22,7 @@ const CircleList = styled.ul`
 // End component Section
 
 export default {
-  title: "Molecules/Colors"
+  title: "Atoms/Colors"
 }
 
 export const Colors = () => {

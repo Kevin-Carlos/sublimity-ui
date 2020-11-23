@@ -2,7 +2,7 @@ import { Divider } from "../../src";
 import styled from "styled-components";
 
 export default {
-  title: "Molecules/Dividers"
+  title: "Atoms/Dividers"
 }
 
 export const Dividers = () => (
