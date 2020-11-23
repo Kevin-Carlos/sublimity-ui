@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Divider } from "../divider";
 import type { DividerProps } from "../divider";
 import { Pen } from 'phosphor-react';
+import { colors } from '../theme';
 
 export type BlockquoteProps = {
   children: React.ReactNode;
@@ -29,7 +30,7 @@ export const Blockquote: FC<BlockquoteProps> = ({
               alignItems: "center"
             }}
           >
-            <Pen weight="duotone" style={{ marginRight: "0.5rem" }} color="rgb(57, 153, 142)" />
+            <Pen weight="duotone" style={{ marginRight: "0.5rem" }} color={colors.orange} />
             {author}
           </span>
         </Author>
